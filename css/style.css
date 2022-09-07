@@ -138,7 +138,7 @@ body {
   width: 100px;
   height: 100px;
   border-radius: 60px;
-  background: url("/img/beirw.jpg") no-repeat;
+  background: url("img/beirw.jpg") no-repeat;
   background-size: 100%;
   background-position: center;
   overflow: hidden;
