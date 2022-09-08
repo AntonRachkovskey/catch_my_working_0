@@ -71,6 +71,12 @@ body{
     }
 
     a{
+        display: flex;
+        width: 100px;
+        margin: 0 auto;
+        margin-top: 20px;
+        align-items: center;
+        justify-content: center;
         border:2px solid white;
         text-decoration: none;
         font-family: sans-serif;
@@ -95,21 +101,27 @@ body{
     top: -500px;
     transition: all 1s ease;
 }
+.down {
+    bottom: -1000px;
+    transition: all 1s ease;
+}
 
 .container_2{
+    width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: all 1s linear;
-    position: relative;
+    position:absolute;
+    z-index: 10000;
    .play_square{ 
        
         .ball{
             width: 100px;
             height: 100px;
             border-radius: 60px;
-            background: url("/img/beirw.jpg") no-repeat;
+            background: url("../img/beirw.jpg") no-repeat;
             background-size: 100%;
             background-position: center;
             overflow: hidden;
@@ -121,8 +133,44 @@ body{
 }
 
 
+.container_3{
+    margin-top: 100px;
+    //display: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: all 0.1s linear;
+
+
+    p{
+        line-height: 40px;
+        font-size: 18px;
+        width: 1200px;
+        font-family: sans-serif;
+        color: #fff;
+        font-weight: 700;
+    }
+    .creators{
+        hr {
+            margin-top: 50px; 
+            border: none; 
+            background-color: #fff; 
+            height: 2px;
+            width: 300px; 
+           }
+        margin: auto;
+        img{
+            width:100px;
+            height: 50px;
+        }
+    }
+
+}
+
 .none{
     opacity: 0%;
+    z-index: 0;
 }
 
 .score {
